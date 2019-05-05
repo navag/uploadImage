@@ -1,0 +1,10 @@
+img{
+    max-width:180px;
+  }
+  input[type=file]{
+  padding:10px;}
+
+
+  .minHeight {
+    min-height: 200px
+  }

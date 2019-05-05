@@ -1,0 +1,10 @@
+<div class="col-md-12 text-center" style="box-shadow:7px 3px 39px 2px grey;margin-top:3%;padding: 10px 10px 10px 10px;">
+    <span style="color:red" *ngIf="imageError"> Please upload only jpeg,png and jpg Images only.</span>
+  <img [src]="url" height="200"> <br/>
+  <input id="uploadImg" style="position: absolute;  margin-top: 3%; width: 16%; margin-left:6%" type='file' (change)="onSelectFile($event)">
+  <button type="button" class="btn btn-secondary" style="margin-top: 3%;" (click)="removeImg()">clear</button>
+  <button type="button"
+   class="btn btn-secondary" style="margin-top: 3%; margin-left:18%" (click)="uploadImg()">Upload</button> 
+  </div>
+  
+  

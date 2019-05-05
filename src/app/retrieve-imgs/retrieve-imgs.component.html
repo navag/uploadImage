@@ -1,0 +1,11 @@
+<div class="container">
+    <!-- <button type="button" class="btn btn-secondary" style="margin-top: 3%; margin-left:18%" (click)="RetrieveImgs()">Retrieve</button>  -->
+     <div class="row text-center">
+        <div *ngFor="let img of imgArray; let i = index">
+          <div style="margin-left:30%;margin-bottom:15%" *ngIf="img.base64Img" class="col">
+              <img [src]="img.base64Img" height="200"> <br/>
+          </div>
+        </div>
+         <div class="w-100" *ngIf="i%4===0"></div>
+         </div>
+    </div>
